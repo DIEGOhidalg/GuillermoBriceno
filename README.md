@@ -81,7 +81,7 @@ Los archivos de assets ya están copiados desde los originales. Si necesitas ree
 | `assets/img/ux-2.png`         | Separador gráfico entre secciones        |
 | `assets/img/ux-3.png`         | Fondo decorativo sección formulario      |
 | `assets/icons/icono-1.png`    | Ícono: Eliminación de antecedentes       |
-| `assets/icons/icono-2.png`    | Ícono: Delitos económicos y estafas      |
+| `assets/icons/icono-2.png`    | Ícono: Revisión de requisitos y plazos   |
 | `assets/icons/icono-3.png`    | Ícono: Querellas estratégicas            |
 | `assets/icons/icono-4.png`    | Ícono: Defensa penal de alta complejidad |
 | `assets/icons/icono-5.png`    | Ícono: Responsabilidad penal de empresas |
