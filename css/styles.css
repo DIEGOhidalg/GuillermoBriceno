@@ -838,3 +838,219 @@ section { padding: 5rem 0; }
   pointer-events: none;
   z-index: 0;
 }
+
+/* ============================================================
+   Landing simple: eliminación de antecedentes
+   ============================================================ */
+.landing-simple {
+  background: var(--marfil);
+}
+
+.landing-simple #navbar .navbar-collapse {
+  background: var(--grafito);
+}
+
+.landing-simple .simple-hero {
+  min-height: auto;
+  padding: calc(var(--navbar-h) + 3rem) 0 3.5rem;
+}
+
+.landing-simple .hero-bg::before {
+  background-color: rgba(58, 6, 20, .7);
+}
+
+.landing-simple .hero-bg::after {
+  background: linear-gradient(105deg, rgba(58, 6, 20, .96) 0%, rgba(58, 6, 20, .82) 42%, rgba(37, 40, 42, .62) 100%);
+  opacity: 1;
+}
+
+.landing-simple .hero-content {
+  padding: 0;
+}
+
+.landing-simple .hero-content h1 {
+  max-width: 660px;
+  font-size: clamp(2.25rem, 4.8vw, 4.25rem);
+}
+
+.landing-simple .hero-content .hero-sub {
+  max-width: 620px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-points {
+  display: grid;
+  gap: .7rem;
+  max-width: 620px;
+  margin: 1.5rem 0 1rem;
+}
+
+.hero-points div {
+  display: flex;
+  gap: .7rem;
+  align-items: flex-start;
+  color: rgba(255, 253, 249, .88);
+  font-size: .96rem;
+}
+
+.hero-points i {
+  color: var(--cobre-claro);
+  font-size: 1.08rem;
+  line-height: 1.55;
+  flex: 0 0 auto;
+}
+
+.hero-form-panel {
+  background: rgba(255, 253, 249, .98);
+  border: 1px solid rgba(209, 154, 114, .35);
+  border-radius: 6px;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  box-shadow: 0 24px 70px -30px rgba(0, 0, 0, .6);
+}
+
+.form-heading {
+  margin-bottom: 1.25rem;
+}
+
+.form-heading h2 {
+  color: var(--oxblood-penal);
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  margin-bottom: .4rem;
+}
+
+.form-heading p:not(.eyebrow) {
+  margin: 0;
+  color: var(--gris-humo);
+  font-size: .95rem;
+}
+
+.landing-simple .form-label span {
+  color: var(--cobre-juridico);
+  font-weight: 600;
+}
+
+.landing-simple textarea.form-control {
+  min-height: 92px;
+}
+
+.btn-whatsapp {
+  min-height: 44px;
+  border-radius: 3px;
+  background: #25D366;
+  border: 1px solid #25D366;
+  color: #fff;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  transition: transform .2s, box-shadow .2s, background-color .2s;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+  background: #1fb457;
+  border-color: #1fb457;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, .28);
+}
+
+.info-strip {
+  background: var(--grafito);
+  padding: 2.25rem 0;
+}
+
+.info-strip strong {
+  display: block;
+  color: var(--cobre-claro);
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  margin-bottom: .35rem;
+}
+
+.info-strip p {
+  color: rgba(255, 253, 249, .76);
+  font-size: .92rem;
+  margin: 0;
+}
+
+.simple-info-section {
+  background: var(--marfil);
+  padding: 4.25rem 0;
+}
+
+.simple-info-section h2 {
+  color: var(--oxblood-penal);
+  max-width: 520px;
+}
+
+.info-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.info-list > div {
+  border-top: 1px solid var(--arena);
+  padding-top: 1.15rem;
+}
+
+.info-list h3 {
+  color: var(--grafito);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: .35rem;
+}
+
+.info-list p {
+  margin: 0;
+  font-size: .96rem;
+}
+
+.legal-note {
+  border-left: 3px solid var(--cobre-juridico);
+  margin: 1.75rem 0 0;
+  padding-left: 1rem;
+  font-size: .86rem;
+  color: var(--gris-humo);
+}
+
+.footer-contact {
+  display: grid;
+  gap: .35rem;
+}
+
+.footer-contact i {
+  color: var(--cobre-juridico);
+}
+
+@media (max-width: 991px) {
+  .landing-simple .simple-hero {
+    padding-top: calc(var(--navbar-h) + 2rem);
+  }
+
+  .landing-simple #navbar .navbar-collapse {
+    padding: 1rem;
+    margin-top: .5rem;
+    border-radius: 4px;
+    box-shadow: 0 18px 34px rgba(0, 0, 0, .25);
+  }
+}
+
+@media (max-width: 575px) {
+  .landing-simple .simple-hero {
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-form-panel {
+    padding: 1.1rem;
+  }
+
+  .wa-float {
+    width: 52px;
+    height: 52px;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
